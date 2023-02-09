@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Lobster&display=swap" rel="stylesheet">
+
+
+<style>
+
+h2 , legend , label{
+    font-family: 'Itim', cursive;
+font-family: 'Lobster', cursive;
+color: white;
+
+}
+
+
+
+input[type="text"] ,input[type="email"] ,input[type="number"] ,input[type="textarea"] ,input[type="date"] ,input[type="file"] ,input[type="submit"], input[type="reset"],#select1 , textarea{
+    border-radius: 5px;
+    font-family: 'Itim', cursive;
+font-family: 'Lobster', cursive;
+}
+
+body{
+    background-color:coral ;
+    background-image: url(hill.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+</style>
+<body>
+
+<h2> Student Registration Form</h2>
+
+<fieldset>  
+    <legend>Register youreslf here...!</legend>
+<form>
+    <table>
+        <tbody> 
+            <tr> 
+                <td> <label> First Name </label>  </td>
+                <td> <input type="text" max="10" required autofocus placeholder="Enter the first name"> </td>
+            </tr>
+            <tr>
+               <td> <label> Last Name </label> </td> 
+               <td>  <input type="text" max="10" required  placeholder="Enter the fist name">   </td>  
+            </tr>
+            <tr>
+                <td> <label> Age </label></td>
+                <td> <input type="number" maxlength="98" placeholder="Enter your Age" required> </td>
+            </tr>
+            <tr>
+                <td> <label> Mobile </label></td>
+                <td> <input type="text" placeholder="Enter your mobile number" required> </td>
+            </tr>
+            <tr>
+                <td> <label> Email </label></td>
+                <td> <input type="email" maxlength="20" placeholder="Enter your email address" required> </td>
+            </tr>
+            <tr>
+                <td>  <label> Date Of Birth </label>   </td>
+                <td> <input type="date" required>   </td>
+             </tr>
+             <tr>
+                <td>  <label> Country</label>   </td>
+                <td> <input type="text" value="India" readonly>   </td>
+             </tr>
+             <tr>
+                <td> <label> Select Degree  </label> </td>
+                <td> 
+                    <select required id="select1">
+                        <option> MCA </option>
+                        <option> BE </option>
+                        <option> BCA </option>
+                        <option> BBA </option>
+                        <option> MCS </option>
+                        <option> BSC</option>
+                    </select>
+                </td>
+            </tr>
+            <tr> 
+                <td> <label> Select Gender </label> </td>
+                <td> 
+                    <input type="radio" name="gender"> <label> Male </label>
+                    <input type="radio" name="gender"> <label> Female </label>
+                    <input type="radio" name="gender"> <label> Others </label>
+                </td>
+            </tr>
+            <tr>
+                <td> <label> Select you hobby </label>  </td>
+                <td>  
+                    <input type="checkbox"> <label> Reading </label>
+                    <input type="checkbox"> <label> Watching Motivation Videos </label>
+                    <input type="checkbox"> <label> Dancing </label>
+                </td>
+            </tr>
+            <tr>
+                <td> <label> Upload Profile Photo </label> </td>
+                <td> <input type="file"> </td>
+            </tr>
+
+            <tr> 
+                <td><label> Upload Graduation Mark sheets</label></td>
+                <td> <input type="file" multiple> </td>
+            </tr>
+             <tr> 
+                <td> <label> Present Address </label>  </td>
+                <td>  <textarea rows="5" cols="40" placeholder="Enter yor present address"></textarea> </td>
+            </tr>
+            <tr>
+                <td> <input type="submit" style="background-color: yellow;">    </td>
+                <td>  <input type="reset" style="background-color: yellow;">   </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</fieldset>
+</body>
+</html>

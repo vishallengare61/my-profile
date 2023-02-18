@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Form Example</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: chartreuse;
+        }
+        .div1{
+            box-shadow: 5px 5px 5px 5px gray;
+            display: inline-block;
+            margin-top:10px;
+            margin-left: 450px;
+            height: 730px;
+            width: 550px;
+            background-color: white;
+            border-radius: 10px;
+
+        }
+        label{
+           
+            display: inline-block;
+            
+            margin-left: 200px;
+            font-size: 25px;
+            font-weight: bolder
+        }
+        form{
+           margin-left: 120px;
+        }
+        .div3{
+            margin-left: 120px;
+            margin-bottom: 30px;
+        }
+        input[type="text"],[name="select"],input[type="submit"],[name="comment"]{
+            width: 350px;
+            height: 30px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px 3px gray;
+        }
+        input[type="submit"]{
+            background-color: chartreuse;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        p{
+            display: inline-block;
+            font-weight: bold;
+        }
+    </style>
+
+    <body>
+        
+        <div class="div1">
+            <label > <u>Survey Form</u> </label><br>
+            <form action="">
+
+                <div class="div2">
+
+                    <P>Name :</P><br>
+                    <input type="text" placeholder="Enter your full name  ">
+                    <br><br>
+                    <P>Email :</P><br>
+                    <input type="text" placeholder="Enter your email Id">
+                    <br><br>
+                    <P>Age :</P><br>
+                    <input type="text" placeholder="Enter your Age">
+                    <br><br>
+                    <p>Which Option best Describe You</p><br>
+                    <select name="select" id="">
+                        <option value="">Student</option>
+                        <option value="">Proffessor</option>
+                        <option value="">Doctor</option>
+                        <option value="">Advocate</option>
+                    </select>
+                    <br><br>
+                    <p>Will you recomanded to your freind to take a survey</p><br>
+                    <input type="radio" name="radio" id="" value="">Yes <br>
+                    <input type="radio" name="radio" id="" value="">No <br>
+                    <input type="radio" name="radio" id="" value="">Maybe <br>
+                    <br>
+
+                    <p>Languages and frameworks known (Check all that apply)</p><br>
+                    <input type="checkbox" name="" id=""> C <br>
+                    <input type="checkbox" name="" id=""> C++ <br>
+                    <input type="checkbox" name="" id=""> C# <br>
+                    <input type="checkbox" name="" id=""> JAVA <br>
+                    <input type="checkbox" name="" id=""> PYTHON <br>
+                    <input type="checkbox" name="" id=""> JAVASCRIPT <br>
+                    <input type="checkbox" name="" id=""> ANGULAR <br>
+                    <input type="checkbox" name="" id=""> SPRING BOOT <br>
+                    <input type="checkbox" name="" id=""> REACT <br><br>
+                    
+                </div>
+            </form>
+                <div class="div3">
+                    <p>Any Comments or suggetion</p>
+                    <textarea name="comment" id="comment"
+                    placeholder="Enter your comment here">
+                </textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+                </div>
+ 
+
+           
+            
+
+
+        </div>
+    </body>
+</html>
